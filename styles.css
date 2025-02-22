@@ -223,17 +223,22 @@ textarea:not([rows]) {
 
 @media (min-width: 61.5rem) {
   body {
-    display: flex;
-    flex-direction: column;
     background-image: url("./images/bg-desktop.svg");
+    display: grid;
+    place-content: center;
     padding-inline: 80px;
   }
 
+  .header__logo {
+    max-width: 13.5rem;
+  }
+
   .hero-section {
-    flex-grow: 1;
+    max-width: 80rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 4fr 3fr;
+    column-gap: 3rem;
+    margin-top: 5rem;
   }
 
   .hero-section__content {
@@ -241,7 +246,6 @@ textarea:not([rows]) {
   }
 
   .hero-section__title {
-    max-width: 30.438rem;
     font-size: var(--fs-xlg);
   }
 
